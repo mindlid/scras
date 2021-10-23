@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Material Icons';
+    src: url('../../../../node_modules/@fontsource/material-icons/files/material-icons-base-400-normal.woff2');
+}
+
+.material-icons {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-block;
+  line-height: 1; 
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+  
