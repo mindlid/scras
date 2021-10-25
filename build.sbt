@@ -1,6 +1,6 @@
 enablePlugins(ScalaJSBundlerPlugin)
 
-name := "my-app"
+name := "scras"
 
 scalaVersion := "2.13.6"
 
@@ -27,9 +27,15 @@ startWebpackDevServer / version := "3.11.2"
 
 webpackResources := baseDirectory.value / "webpack" * "*"
 
-fastOptJS / webpackConfigFile := Some(baseDirectory.value / "webpack" / "webpack-fastopt.config.js")
-fullOptJS / webpackConfigFile := Some(baseDirectory.value / "webpack" / "webpack-opt.config.js")
-Test / webpackConfigFile := Some(baseDirectory.value / "webpack" / "webpack-core.config.js")
+fastOptJS / webpackConfigFile := Some(
+  baseDirectory.value / "webpack" / "webpack-fastopt.config.js"
+)
+fullOptJS / webpackConfigFile := Some(
+  baseDirectory.value / "webpack" / "webpack-opt.config.js"
+)
+Test / webpackConfigFile := Some(
+  baseDirectory.value / "webpack" / "webpack-core.config.js"
+)
 
 fastOptJS / webpackDevServerExtraArgs := Seq("--inline", "--hot")
 fastOptJS / webpackBundlingMode := BundlingMode.LibraryOnly()
